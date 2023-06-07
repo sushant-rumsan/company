@@ -1,0 +1,40 @@
+.addCompany{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .formElements{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        select{
+            padding: 5px 0;
+            border: none;
+            margin-top: 5px;
+        }
+        label{
+            font-size: 10px;
+            color: rgb(46, 46, 46);
+        }
+        input{
+            padding: 6px 0;
+            border: none;
+            border-bottom: 1px lightgrey solid;
+        }
+    }
+    button{
+            margin-top: 5px;
+            width: 90%;
+            padding: 8px 0;
+            background-color: #E4A64A;
+            border: none;
+            cursor: pointer;
+    }
+}

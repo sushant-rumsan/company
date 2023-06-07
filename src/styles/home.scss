@@ -1,0 +1,113 @@
+.centerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    gap: 20px;
+    .singleBtn{
+    width: 100%;
+    padding: 8px 0;
+    background-color: #E4A64A;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    &:hover{
+        background-color: #e19c34
+    }
+    .link{
+        text-decoration: none;
+        color: black;
+    }
+    }
+    .companyText{
+        width: 80%;
+        margin-bottom: -10px;
+        margin-top: 50px;
+        color: grey;
+    }
+    .companyContainer{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding: 10px 0;
+        box-shadow: 5px 5px 10px #e3e3e3;
+        gap: 10px;
+        p{
+            margin-top: -8px;
+            color: grey;
+            font-size: 12px;
+        }
+        .topPart{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4px 0;
+            .hiring{
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                margin-right: 10px;
+            h4{
+
+            }
+            span{
+
+            }
+            .green{
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: green;
+            }
+            .red{
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: red;
+            }
+        }
+        }
+        p{
+
+        }
+        ul{
+            width: 90%;
+            display: flex;
+            list-style: none;
+            gap: 10px;
+            .listContainer{
+                display: flex;
+                align-items: center;
+                gap: 4px;
+            li{
+                
+            }
+            .bullet{
+                width: 5px;
+                height: 5px;
+                background-color: grey;
+            }
+        }
+        }
+        .contactContainer{
+            display: flex;
+            gap: 20px;
+            font-size: 10px;
+            color: grey;
+            .contactField{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 5px;
+                img{
+                    width: 12px;
+                    height: auto;
+                    opacity: 0.9;
+                }
+                .contactInfo{
+
+                }
+            }
+        }
+    }
+}

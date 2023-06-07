@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route} from 'react-router-dom';
+import Left from './component/left';
+import Right from './component/right';
+import Add from './pages/add';
+import Home from './pages/home'
+import Single from './pages/single';
+import Update from './pages/update';
+import './styles/main.scss'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = ()=>{
+  return(
+    <div className='App'>
+      <Left/>
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/add" element={<Add/>} />
+      <Route path="/company/:id" element={<Single/>} />
+      <Route path="/update/:id" element={<Update/>} />
+    </Routes>
+    <Right/>
     </div>
-  );
+  )
 }
 
 export default App;

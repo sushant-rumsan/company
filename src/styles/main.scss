@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+.App{
+    display: flex;
+    .left{
+        flex: 2;
+        box-shadow: 5px 5px 10px #e3e3e3;
+        height: 100vh;
+        overflow-y: hidden;
+    }
+    .center{
+        flex: 5;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    .right{
+        flex: 2;
+    }
+}
+}
+//Styling scroll bar
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #E4A64A;
+    border-radius: 10px;
+  }
