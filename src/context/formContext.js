@@ -44,7 +44,7 @@ export const FormProvider = (props) => {
             "framework": arrDisFrm
         }
         
-        axios.post('http://localhost:8800/add', finalFormData)
+        axios.post('https://comp-servers.onrender.com/add', finalFormData)
         .then(()=>{
             console.log(formData)
         })
@@ -63,7 +63,7 @@ export const FormProvider = (props) => {
         "framework": arrDisFrm
     }
     
-    axios.patch(`http://localhost:8800/6391cf486380568a17e38c4a`, finalFormData)
+    axios.patch(`https://comp-servers.onrender.com/6391cf486380568a17e38c4a`, finalFormData)
     .then(()=>{
         console.log('Success')
     })

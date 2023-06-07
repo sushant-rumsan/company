@@ -13,7 +13,7 @@ const Home = () => {
     const {company, setCompany} = useContext(formContext) 
 
     useEffect(()=>{
-        axios.get('http://localhost:8800/10')
+        axios.get('https://comp-servers.onrender.com/10')
     .then((res)=>{
         setCompany(res.data)
     })
