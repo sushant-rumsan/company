@@ -23,7 +23,7 @@ const Update = () => {
 
     // Get company data
     useEffect(()=>{
-    axios.get(`http://localhost:8800/company/${id}`)
+    axios.get(`https://comp-servers.onrender.com/company/${id}`)
     .then((res)=>{
     setCompany(res.data)
     })

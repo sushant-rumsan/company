@@ -29,7 +29,7 @@ const Left = () => {
     //Search function
     const handleSubmit = () => {
         console.log(formData.city)
-        axios.get(`http://localhost:8800/search/${formData.city}/${formData.language}/${formData.hiring}`)
+        axios.get(`https://comp-servers.onrender.com/search/${formData.city}/${formData.language}/${formData.hiring}`)
         .then((res)=>{
         setCompany(res.data)
         })

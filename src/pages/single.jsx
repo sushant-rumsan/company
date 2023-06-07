@@ -19,7 +19,7 @@ const Single = () => {
     const navigate = useNavigate();
 
     useEffect(()=>{
-        axios.get(`http://localhost:8800/company/${id}`)
+        axios.get(`https://comp-servers.onrender.com/company/${id}`)
         .then((res)=>{
         setCompany(res.data)
     })
@@ -28,7 +28,7 @@ const Single = () => {
 
     //Handle delete
     const handleDelete = ()=>{
-        axios.delete(`http://localhost:8800/${id}`)
+        axios.delete(`https://comp-servers.onrender.com/${id}`)
         .then((res)=>{
             navigate('/')
         })
