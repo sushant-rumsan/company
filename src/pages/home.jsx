@@ -86,7 +86,7 @@ const Home = () => {
                     </div>
                 )
             })
-             :(<h1>Loading....</h1>)}
+             :(<h1>Loading, since it is hosted on free server, it might take a while to load....</h1>)}
              </div>
         </div>
      );
